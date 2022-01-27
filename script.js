@@ -30,6 +30,8 @@ function get_date(){
 
 function total_price(){
     total_p = quantity_field.value * gas_price;
-    console.log(total_p);
+    total.innerHTML = total_p;
 }
+
+get_date();
 
