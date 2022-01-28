@@ -4,14 +4,14 @@
 }
 
 body{
-    background-color:#D35400;
+    background-color: #c3cdce ;
 }
 
 .main_contaner .input_contaner{
     display: flex;
     flex-direction: column;
     width: 50vw;
-    margin-top: 5vw;
+    margin-top: 2vw;
 
 }
 
@@ -21,7 +21,10 @@ body{
     margin-top: 19px;
     padding: 5px;
     
+    
 }
+
+
 
 .main_contaner .input_contaner .total{
     color: white;
@@ -44,7 +47,7 @@ body{
     height: 60px;
     text-align: center;
     font-size: 24px;
-    background-color: #2C3E50;
+    background-color:  #5c6369 ;
     color: white;
     border: none;
     border-radius: 4px;
@@ -53,12 +56,37 @@ body{
 }
 
 .main_contaner .button_contaner button:hover{
-    background-color: #18212a;
+    background-color: #3e4347;
     
 }
 
 .main_contaner .button_contaner .add_btn ,.clear_btn{
     margin:1.5vw 0.5vw;
+}
+
+
+
+
+.output_contaner .customers{
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.output_contaner .customers tr{
+    background-color: white;
+}
+
+
+.output_contaner .customers th ,.customers td{
+    padding: 8px;
+    border: 1px solid white;
+    
+}
+
+.output_contaner .customers th{
+    color: white;
+    background-color:  #229954 ;
 }
 
 

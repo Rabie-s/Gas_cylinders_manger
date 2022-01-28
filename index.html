@@ -10,20 +10,83 @@
 
 <center>
     <div class="main_contaner">
+
         <div class="input_contaner">
             <input placeholder="Name" class="name_field" id="name_field" type="text">
-            <input placeholder="Phoen number" class="phone_field" id="phone_field" type="number">
+            <input placeholder="Phoen number" class="phone_field" id="phone_field" type="number" max="5">
             <input placeholder="Addres" class="addres_field" id="addres_field" type="text">
             <input onkeyup="total_price()" placeholder="Quantity" class="quantity_field" id="quantity_field" type="number">
             <input placeholder="Date" class="date_field" id="date_field" type="text" disabled>
             <small class="total" id="total"></small>
         </div>
 
+
+
         <div class="button_contaner">
             <button onclick="total_price()" class="add_btn">Add</button>
             <button class="clear_btn" onclick="clear_field()">Clear</button>
         </div>
+
+
+
+        <div class="output_contaner">
+            <table class="customers">
+    
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>PhoenNumber</th>
+                        <th>Addres</th>
+                        <th>Quantity</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th></th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>rabie</td>
+                        <td>0777452178</td>
+                        <td>Ajloun</td>
+                        <td>3</td>
+                        <td>2022-1-28</td>
+                        <td>7:00</td>
+                        <td><button>Delete</button><button>update</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>ahmad</td>
+                        <td>0777452178</td>
+                        <td>amman</td>
+                        <td>2</td>
+                        <td>2022-1-27</td>
+                        <td>12:14</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>ali</td>
+                        <td>0777452178</td>
+                        <td>amman</td>
+                        <td>1</td>
+                        <td>2022-1-27</td>
+                        <td>1:15</td>
+                    </tr>
+                </tbody>
+    
+            </table>
+        </div>
+
+
+
+
     </div>
+
 </center>
 
     <script src="script.js"></script>

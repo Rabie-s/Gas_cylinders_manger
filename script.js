@@ -14,7 +14,7 @@ function clear_field(){
     phone_field.value = '';
     addres_field.value = '';
     quantity_field.value = '';
-    date_field.value = '';
+    //date_field.value = '';
     total.innerHTML = '';
 }
 
