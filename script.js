@@ -6,7 +6,14 @@ let quantity_field = document.getElementById("quantity_field");
 let date_field = document.getElementById("date_field");
 let total = document.getElementById("total");
 
+let add_btn = document.getElementById("add_btn");
+
 let gas_price = 7;
+
+//array
+
+let table_arr = [];
+
 
 
 function clear_field(){
@@ -28,10 +35,38 @@ function get_date(){
     date_field.value = full_date;
 }
 
+function get_time(){
+    let date = new Date();
+    let time = date.getHours()+":"+date.getMinutes();
+    return time;
+}
+
 function total_price(){
     total_p = quantity_field.value * gas_price;
     total.innerHTML = total_p;
 }
 
+
+add_btn.onclick = function(){
+    table_opj={
+        name:name_field.value,
+        phone:phone_field.value,
+        addres:addres_field.value,
+        quantity:quantity_field.value,
+        date:date_field.value,
+        time:get_time()
+    }
+    clear_field();
+
+    table_arr.push(table_opj);
+    console.log(table_arr);
+}
+
+
+
+
+
 get_date();
+
+
 
